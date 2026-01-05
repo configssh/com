@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="description" content="مجمع مواقع الكونفيجبات - تصفح الأقسام، ابحث، وأضف للمفضلة." />
+  <title>مجمع مواقع الكوفيجبات - ConfigHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <h1 class="hero-title">مجمع مواقع الكونفيجبات</h1>
+        <p class="hero-subtitle">⭐ مواقع حقيقية مع صور الشركات ⭐</p>
+        <div class="hero-actions">
+          <button class="icon-btn" id="themeToggle" type="button" aria-label="تبديل السمة">سمة</button>
+          <button class="icon-btn" id="exportFavorites" type="button" aria-label="تصدير المفضلة">تصدير</button>
+          <button class="icon-btn" id="importFavorites" type="button" aria-label="استيراد المفضلة">استيراد</button>
+          <input id="favoritesFile" type="file" accept="application/json" hidden />
+        </div>
+        <div class="search-wrap">
+          <div class="search">
+            <span class="search-ico" aria-hidden="true">🔎</span>
+            <input id="searchInput" type="search" placeholder="إبحث عن مواقع، بإيلودات، أو أي شيء" autocomplete="off" aria-label="بحث" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="picker" aria-label="الأقسام">
+      <div class="picker-card">
+        <div class="picker-grid">
+          <button class="picker-btn pick-football" data-section="football" type="button">كرة القدم</button>
+          <button class="picker-btn pick-configs active" data-section="configs" type="button">الكونفيجبات</button>
+          <button class="picker-btn pick-payload" data-section="payload" type="button">البايلودات</button>
+          <button class="picker-btn pick-anime" data-section="anime" type="button">الأنيـمي</button>
+          <button class="picker-btn picker-btn--full pick-favorite" data-section="favorite" type="button">المفضلة</button>
+        </div>
+      </div>
+    </section>
+    <section class="layout">
+      <aside class="sidebar" aria-label="شريط الفلاتر">
+        <div class="sidebar-title">
+          <span id="sidebarTitle">فلاتر</span>
+        </div>
+        <div class="filters" id="filters"></div>
+      </aside>
+      <section class="content" aria-label="المحتوى">
+        <div class="content-head">
+          <h2 id="contentTitle">الكونفيجبات</h2>
+          <div class="result-count" id="resultCount">0 نتيجة</div>
+        </div>
+        <div class="grid" id="grid"></div>
+      </section>
+    </section>
+  </main>
+  <footer class="footer">
+    2024 مجمع مواقع الكوفيجبات - جميع المواقع مع صور الشركات
+  </footer>
+  <noscript>
+    <div class="container" style="padding:12px 0;color:inherit">يجب تفعيل JavaScript لعرض المحتوى.</div>
+  </noscript>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
