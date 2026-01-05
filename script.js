@@ -3,7 +3,7 @@ const App = (() => {
     football: { id: "football", label: "كرة القدم" },
     configs: { id: "configs", label: "الكونفيجبات" },
     anime: { id: "anime", label: "الأنيـمي" },
-    payload: { id: "payload", label: "البايلودات" },
+    payload: { id: "payload", label: "Payload" },
     favorite: { id: "favorite", label: "المفضلة" },
   };
 
@@ -70,7 +70,7 @@ const App = (() => {
       badgeType: "OFFICIAL",
       badgeLabel: "كرة قدم",
       description: "موقع عربي رسمي للأخبار والنتائج وجدول المباريات.",
-      logo: "K",
+      logo: "",
     },
     {
       id: "ft-2",
@@ -81,7 +81,7 @@ const App = (() => {
       badgeType: "NEWS",
       badgeLabel: "NEWS",
       description: "أخبار كرة القدم العالمية وتحليلات وروابط مباشرة.",
-      logo: "E",
+      logo: "",
     },
     {
       id: "ft-3",
@@ -92,7 +92,7 @@ const App = (() => {
       badgeType: "SCORES",
       badgeLabel: "كرة قدم",
       description: "نتائج مباشرة وإحصائيات تفصيلية لكل مباراة.",
-      logo: "S",
+      logo: "",
     },
     {
       id: "ft-4",
@@ -103,7 +103,7 @@ const App = (() => {
       badgeType: "LIVE",
       badgeLabel: "LIVE",
       description: "أشهر موقع لبث المباريات مباشرة بجودات مختلفة.",
-      logo: "F",
+      logo: "",
     },
 
     {
@@ -115,7 +115,7 @@ const App = (() => {
       badgeType: "PREMIUM",
       badgeLabel: "PREMIUM",
       description: "أفضل منصة رسمية لمشاهدة الأنمي بجودة عالية.",
-      logo: "C",
+      logo: "",
     },
     {
       id: "an-2",
@@ -126,7 +126,7 @@ const App = (() => {
       badgeType: "FREE",
       badgeLabel: "أنمي",
       description: "موقع أنمي مجاني بمكتبة ضخمة وتحديثات سريعة.",
-      logo: "9",
+      logo: "",
     },
     {
       id: "an-3",
@@ -137,7 +137,7 @@ const App = (() => {
       badgeType: "INFO",
       badgeLabel: "INFO",
       description: "معلومات وتقييمات وقوائم تتبع لكل أعمال الأنمي.",
-      logo: "M",
+      logo: "",
     },
     {
       id: "an-4",
@@ -148,19 +148,19 @@ const App = (() => {
       badgeType: "FREE",
       badgeLabel: "أنمي",
       description: "مشاهدة وتحميل أنمي مترجم بسرعة وخيارات متعددة.",
-      logo: "G",
+      logo: "",
     },
 
     {
       id: "pl-1",
       category: "payload",
       subCategory: "iam",
-      title: "Paylod IAM ⭐ 6",
+      title: "Payload IAM ⭐ 6",
       url: "",
       badgeType: "PAYLOAD",
       badgeLabel: "IAM",
       description: "بايلود IAM شغال (نموذجي) للاختبار.",
-      logo: "I",
+      logo: "",
       operator: "IAM",
       isMixed: false,
       carrierLabel: "اتصالات المغرب",
@@ -176,7 +176,7 @@ const App = (() => {
       badgeType: "PAYLOAD",
       badgeLabel: "INWI",
       description: "بايلود INWI (نموذجي) مع [host] و[crlf].",
-      logo: "W",
+      logo: "",
       operator: "INWI",
       isMixed: false,
       carrierLabel: "إنوي المغرب",
@@ -192,7 +192,7 @@ const App = (() => {
       badgeType: "PAYLOAD",
       badgeLabel: "ORANGE",
       description: "بايلود أورانج (نموذجي) للاستخدام في نفق/ويب سوكيت.",
-      logo: "O",
+      logo: "",
       operator: "ORANGE",
       isMixed: false,
       carrierLabel: "أورانج المغرب",
@@ -208,7 +208,7 @@ const App = (() => {
       badgeType: "PAYLOAD",
       badgeLabel: "مختلط",
       description: "بايلود مختلط قد يشتغل مع أكثر من مشغل (نموذجي).",
-      logo: "M",
+      logo: "",
       operator: "MIXED",
       isMixed: true,
       carrierLabel: "مختلط (INWI+IAM)",
@@ -225,7 +225,7 @@ const App = (() => {
       badgeType: "PROXY",
       badgeLabel: "IAM",
       description: "بروكسي IAM (نموذجي) للاستخدام في التطبيقات.",
-      logo: "I",
+      logo: "",
       operator: "IAM",
       isMixed: false,
       carrierLabel: "اتصالات المغرب",
@@ -240,7 +240,7 @@ const App = (() => {
       badgeType: "PROXY",
       badgeLabel: "INWI",
       description: "بروكسي INWI (نموذجي) سريع ومستقر.",
-      logo: "W",
+      logo: "",
       operator: "INWI",
       isMixed: false,
       carrierLabel: "إنوي المغرب",
@@ -255,7 +255,7 @@ const App = (() => {
       badgeType: "PROXY",
       badgeLabel: "ORANGE",
       description: "بروكسي أورانج (نموذجي) للاختبار.",
-      logo: "O",
+      logo: "",
       operator: "ORANGE",
       isMixed: false,
       carrierLabel: "أورانج المغرب",
@@ -270,7 +270,7 @@ const App = (() => {
       badgeType: "PROXY",
       badgeLabel: "مختلط (IAM+INWI)",
       description: "بروكسي مختلط (نموذجي) قد يشتغل مع أكثر من مشغل.",
-      logo: "X",
+      logo: "",
       operator: "MIXED",
       isMixed: true,
       carrierLabel: "مختلط (IAM+INWI)",
@@ -286,7 +286,7 @@ const App = (() => {
       badgeType: "SSH",
       badgeLabel: "SSH",
       description: "أفضل موقع لخدمات SSH مع واجهة مستخدم رائعة.",
-      logo: "SO",
+      logo: "",
     },
     {
       id: "fv-2",
@@ -297,7 +297,7 @@ const App = (() => {
       badgeType: "SSH",
       badgeLabel: "SSH",
       description: "حسابات SSH وتجديد سريع ولوحات تحكم.",
-      logo: "SS",
+      logo: "",
     },
     {
       id: "fv-3",
@@ -308,7 +308,7 @@ const App = (() => {
       badgeType: "VPN",
       badgeLabel: "VPN موقع",
       description: "خدمات VPN/SSL Tunnel للاستخدام على عدة منصات.",
-      logo: "V",
+      logo: "",
     },
     {
       id: "fv-4",
@@ -319,7 +319,7 @@ const App = (() => {
       badgeType: "TUNNEL",
       badgeLabel: "TUNNEL موقع",
       description: "مجموعة أدوات للأنفاق: stunnel / websocket / ssl.",
-      logo: "T",
+      logo: "",
     },
     {
       id: "fv-5",
@@ -330,7 +330,7 @@ const App = (() => {
       badgeType: "WEBSOCKET",
       badgeLabel: "WEBSOCKET موقع",
       description: "ويب سوكيت + SSH مع إعدادات جاهزة.",
-      logo: "GS",
+      logo: "",
     },
     {
       id: "fv-6",
@@ -341,16 +341,32 @@ const App = (() => {
       badgeType: "SSH",
       badgeLabel: "SSH",
       description: "أفضل موقع لخدمات SSH مع واجهة مستخدم رائعة.",
-      logo: "SO",
+      logo: "",
     }
   ];
 
   const itemById = new Map(DATA.map((item) => [String(item.id), item]));
 
   const STORAGE_KEYS = {
-    theme: "confighub.theme",
+    theme: "theme",
     favorites: "confighub.favorites",
   };
+
+  function readSavedTheme() {
+    try {
+      let saved = localStorage.getItem(STORAGE_KEYS.theme);
+      if (!saved) {
+        const legacy = localStorage.getItem("confighub.theme");
+        if (legacy) {
+          saved = legacy;
+          localStorage.setItem(STORAGE_KEYS.theme, legacy);
+        }
+      }
+      return saved;
+    } catch {
+      return null;
+    }
+  }
 
   const EXPORT_FILENAME = "confighub-favorites.json";
 
@@ -547,7 +563,7 @@ const App = (() => {
   }
 
   function loadTheme() {
-    const saved = localStorage.getItem(STORAGE_KEYS.theme);
+    const saved = readSavedTheme();
     if (saved === "light") {
       document.documentElement.setAttribute("data-theme", "light");
     } else {
@@ -683,7 +699,7 @@ const App = (() => {
       for (let i = 0; i < 3; i++) push("sig-orange");
     }
 
-    return out.join("");
+    return out.slice(0, 5).join("");
   }
 
   function badgeClassFrom(item) {
@@ -779,7 +795,7 @@ const App = (() => {
       const typeClass = String(item.badgeType || "").toUpperCase() === "PROXY" ? "proxy" : "payload";
 
       const copyValue = item.payloadContent || "";
-      const copyLabel = "نسخ البايادو";
+      const copyLabel = "نسخ Payload";
 
       const logoSrc = logoSvgDataUrl(item.title || item.badgeLabel || item.operator || item.logo);
       const logoBlock = `<div class="logo" aria-hidden="true">
@@ -805,7 +821,7 @@ const App = (() => {
               </div>
 
               <h3 class="title">${escapeHtml(item.title)}</h3>
-              <p class="url">بايلود</p>
+              <p class="url">Payload</p>
 
               <div class="badges">
                 <span class="badge operator ${opClass}">${operatorText}</span>
@@ -838,7 +854,7 @@ const App = (() => {
 
     const badgeLeft =
       item.category === "payload"
-        ? `<span class="badge soft">بايلود</span>`
+        ? `<span class="badge soft">Payload</span>`
         : `<span class="badge soft">موقع</span>`;
 
     const payloadBlock =
@@ -851,7 +867,7 @@ const App = (() => {
           </div>`
         : "";
 
-    const copyLabel = item.category === "payload" ? "نسخ البايادو" : "نسخ الرابط";
+    const copyLabel = item.category === "payload" ? "نسخ Payload" : "نسخ الرابط";
     const visitLabel = item.category === "payload" ? "زيارة الموقع" : "زيارة الموقع";
 
     const copyValue = item.category === "payload" ? item.payloadContent || "" : item.url || "";
