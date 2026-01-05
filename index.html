@@ -9,8 +9,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    (() => {
+      try {
+        let saved = localStorage.getItem("theme");
+        if (!saved) {
+          const legacy = localStorage.getItem("confighub.theme");
+          if (legacy) {
+            saved = legacy;
+            localStorage.setItem("theme", legacy);
+          }
+        }
+
+        if (saved === "light") {
+          document.documentElement.setAttribute("data-theme", "light");
+        } else {
+          document.documentElement.removeAttribute("data-theme");
+        }
+      } catch {
+      }
+    })();
+  </script>
   <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
   <main class="container">
     <section class="hero">
@@ -26,7 +48,7 @@
         <div class="search-wrap">
           <div class="search">
             <span class="search-ico" aria-hidden="true">🔎</span>
-            <input id="searchInput" type="search" placeholder="إبحث عن مواقع، بإيلودات، أو أي شيء" autocomplete="off" aria-label="بحث" />
+            <input id="searchInput" type="search" placeholder="إبحث عن مواقع أو Payload أو أي شيء" autocomplete="off" aria-label="بحث" />
           </div>
         </div>
       </div>
@@ -36,7 +58,7 @@
         <div class="picker-grid">
           <button class="picker-btn pick-football" data-section="football" type="button">كرة القدم</button>
           <button class="picker-btn pick-configs active" data-section="configs" type="button">الكونفيجبات</button>
-          <button class="picker-btn pick-payload" data-section="payload" type="button">البايلودات</button>
+          <button class="picker-btn pick-payload" data-section="payload" type="button">Payload</button>
           <button class="picker-btn pick-anime" data-section="anime" type="button">الأنيـمي</button>
           <button class="picker-btn picker-btn--full pick-favorite" data-section="favorite" type="button">المفضلة</button>
         </div>
